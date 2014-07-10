@@ -3,19 +3,30 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
 @font-face {
-    font-family: 'adine_kirnbergregular';
-    src: url('adine_kirnberg-webfont.eot');
-    src: url('adine_kirnberg-webfont.eot?#iefix') format('embedded-opentype'),
-         url('adine_kirnberg-webfont.woff') format('woff'),
-         url('adine_kirnberg-webfont.ttf') format('truetype'),
-         url('adine_kirnberg-webfont.svg#adine_kirnbergregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+    font-family: 'AdineKirnbergRegular';
+    src: url('../fonts/llogzbya.eot');
+    src: url('../fonts/llogzbya.eot') format('embedded-opentype'),
+         url('../fonts/llogzbya.woff') format('woff'),
+         url('../fonts/llogzbya.ttf') format('truetype'),
+         url('../fonts/llogzbya.svg#AdineKirnbergRegular') format('svg');
 }
-
+body{
+    color:#010101;
+    font-family: 'PT Sans', sans-serif;
+}
+header .logo{
+    background-image: url("../img/logo.png");
+    height: 140px;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+}
+header .slogan{
+    font-family: 'AdineKirnbergRegular';
+    font-size: 35px;
+    padding-top: 10px;
+}
 
 
 
