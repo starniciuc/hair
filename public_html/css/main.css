@@ -187,7 +187,7 @@ a.reg-online .right-arr{
     display: block;
     font-size: 16px;
     text-transform: uppercase;
-    padding: 10px 28px;
+    padding: 10px 27px;
     text-decoration: none;
 }
 .menu li:first-child a{
@@ -293,4 +293,125 @@ p.name{
 }
 .left-menu li a{
     font-size: 16px;    
+}
+.item-news{
+    margin-bottom: 20px;
+}
+.item-news .image{
+    padding-right: 10px;
+    vertical-align: top;
+    padding-top: 2px;
+}
+.item-news .image img{
+    width: 96px;
+}
+p.data{
+    color:#7e7e7e;
+    font-size: 12px;
+    line-height: 12px;
+}
+.item-news p{
+    color: #737373;
+    margin-bottom: 5px;
+}
+.more p a{
+    font-size: 12px;
+    text-align: left;
+}
+.article h2{
+    margin-top: 0;
+    font-size: 24px;
+    line-height: 16px;
+    background-image: url("../img/bull.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+}
+.article h2 span{
+    background-color: #FFF;
+}
+.article h2 b{
+    border-bottom: 1px solid #000;
+    width: 99.3%;
+    display: block;
+    font-weight: normal;
+}
+
+.main-baner{
+    background-color: #de454b;
+    padding: 0 15px 15px;
+    margin-bottom: 15px;
+}
+.main-baner .item-banner{
+    float: left;
+    width: 33.33%;
+    padding-top: 15px;
+    text-align: center;
+}
+.main-baner .item-banner img{
+    width: 100%;
+}
+.main-baner:after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.item-banner .center-banner{
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+}
+.item-banner .image
+{
+    display:block;
+    position:relative;
+    margin-bottom: 10px;
+}
+ 
+.item-banner .image img
+{
+    display:block;
+}
+ 
+.item-banner:hover .image::before
+{
+    display:block;
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    box-shadow: 0 0 0 3px #FFF inset; 
+}
+.item-banner:hover{
+    background-image: url("../img/banner-hover.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.item-banner p{
+    margin-bottom: 5px;
+}
+.item-banner p a{
+    color:#FFF;
+    font-size: 18px;
+}
+.item-banner p.desc{
+    color: #000000;
+    padding: 0 40px;
+}
+.bullets-white{
+    height: 5px;
+    width: 100%;
+    margin-top: -7px;
+}
+.bullets-white .bull-w-l{
+    width: 5px;
+    height: 5px;
+    background-image: url("../img/bull-w.png");
+    float: left;
+}
+.bullets-white .bull-w-r{
+    width: 5px;
+    height: 5px;
+    background-image: url("../img/bull-w.png");
+    float: right;
 }
