@@ -16,6 +16,37 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+        <script>
+            function initialize() {
+                var myLatlng = new google.maps.LatLng(56.044831, 92.902566);
+                var myLatlng1 = new google.maps.LatLng(56.013484, 92.854247);
+                var myOptions = {
+                    zoom: 14,
+                    center: myLatlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var myOptions1 = {
+                    zoom: 14,
+                    center: myLatlng1,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+                var map1 = new google.maps.Map(document.getElementById("map_canvas1"), myOptions1);
+
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: "Салон красоты Mod's Hair"
+                });
+                var marker1 = new google.maps.Marker({
+                    position: myLatlng1,
+                    map: map1,
+                    title: "Салон красоты Mod's Hair"
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -24,46 +55,51 @@
             <header>
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <a href="index.html">
                                 <div class="logo"></div>
                             </a>
                         </div>
-                        <div class="col-sm-9">
+                        <div class="col-sm-8">
                             <div class="row">
                                 <div class="col-sm-6 slogan ">
                                     <p>Мы создаем моду, а не следуем за ней</p>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="form-search">
-                                        <form>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <div class="col-sm-7">
-                                                        <input class="form-control" type="text">
-                                                    </div>
-                                                    <div class="col-sm-5">
-                                                        <img src="img/wifi.png">
+                                    <div class="search-block">
+                                        <div class="row">
+                                            <div class="col-sm-7">
+                                                <div class="pa15">
+                                                    <div class="search">
+                                                        <form>
+                                                            <div class="input-search">
+                                                                <input type="text" placeholder="поиск">
+                                                                <button type="submit"><span></span></button>
+                                                            </div>
+                                                        </form>
                                                     </div>
                                                 </div>
-                                                
                                             </div>
-                                        </form>
+                                            <div class="col-sm-5">
+                                                <img src="img/wifi.png" alt="wifi">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-3">
-                                    <p>391) 277-15-13</p>
+                                    <p class="call-number">(391) <strong>277-15-13</strong></p>
                                     <p>ул. Алексеева, 93</p>
                                 </div>
-                                <div class="col-sm-6">
-                                    <p>(391) 211-02-90, 211-08-03</p>
+                                <div class="col-sm-5">
+                                    <p class="call-number">(391) <strong>211-02-90, 211-08-03</strong></p>
                                     <p>ул. Красной Армии, 7</p>
                                 </div>
-                                <div class="col-sm-3">
-                                    <a href="#">Режим работы</a>
-                                    <a href="#">Запись онлайн</a>
+                                <div class="col-sm-4 text-right">
+                                    <p><a href="#" class="time-work"><span>Режим работы</span></a></p>
+                                    <p></p>
+                                    <p><a href="#" class="reg-online"><i class="left-arr"></i><span><b>Запись онлайн</b></span><i class="right-arr"></i></a></p>
                                 </div>
                             </div>
                         </div>
@@ -72,8 +108,11 @@
             </header>
             <div class="navbar navbar-inverse main-menu" role="navigation">
                 <div class="container">
-                    <div class="decor left"></div>
-                    <div class="decor right"></div>
+                    <div class="line-bull-up">
+                        <div class="bull left"></div>
+                        <div class="bull right"></div>
+                        <div class="line-bull-down"></div>
+                    </div>
                     <div class="row">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -86,26 +125,126 @@
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="menu">
-                                <li></li>
-                                <li><a href="index.html" class="home"></a></li>
-                                <li><a href="#" class="about"><span></span>О TianDe</a></li>
-                                <li><a href="#" class="about2"><span></span>Обо мне</a></li>
-                                <li><a href="#" class="blog"><span></span>Мой блог</a></li>
-                                <li><a href="#" class="team"><span></span>Моя команда</a></li>
-                                <li><a href="#" class="mic"><span></span>Мероприятия</a></li>
-                                <li><a href="#" class="query"><span></span>Вопрос - ответ</a></li>
-                                <li><a href="#" class="contact"><span></span>Контакты</a></li>
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="#">Коллекция стрижек</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Цены</a></li>
+                                <li><a href="#">Команда</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Вопрос-ответ</a></li>
+                                <li><a href="#" class="contact">О нас<span></span></a></li>
                             </ul>
                         </div><!--/.navbar-collapse -->
+                    </div>
+                    <div class="line-bull-up">
+                        <div class="bull left"></div>
+                        <div class="bull right"></div>
+                        <div class="line-bull-top"></div>
                     </div>
                 </div>
             </div>
             <div class="container">
-                
+                <div class="row">
+                    <div class="col-sm-3">
+                        <ul class="left-menu">
+                            <li><a href="#">Акции и новости</a></li>
+                            <li><a href="#">Наши сплетни</a></li>
+                            <li><a href="#">Фото</a></li>
+                            <li><a href="#">Видео</a></li>
+                            <li><a href="#">Справочник красоты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <div class="query-block">
+                            <p class="name">Задайте мне вопрос:</p>
+                            <img src="img/query-img.png" alt="query">
+                            <p class="name"><strong>Слободовская Екатерина</strong></p>
+                            <p>сот. 286-07-01</p>
+                            <p><a href="#">director@modshair.ru</a></p>
+                            <p><a href="#" class="reg-online"><i class="left-arr"></i><span>Задать вопрос</span><i class="right-arr"></i></a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h2>Новости</h2>
+                                <div class="item-news">
+                                    <div class="image">
+                                        
+                                    </div>
+                                    <div class="description"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <footer>
-                
-            </footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class=" history-block">
+                            <div class="line-bull-up"><div class="bull left"></div><div class="bull right"></div><div class="line-bull-top"></div></div>
+                            <div class="his-content">
+                                <h1>Французская революция</h1>
+                                <p>Как ни крути, все выдающиеся изобретения принадлежат мужчинам.</p>
+                                <p>Ну, или почти все. И даже взгляд на такой «женский» вопрос, как красота, — это все-таки мужской взгляд. В том числе на моду, стиль и парикмахерское искусство.</p>
+                                <p>В 1968 году мужчинам пришло в голову много интересного. Например, в СССР придумали новостную программу «Время». В Америке — первую компьютерную мышь. А во Франции молодые парикмахеры братья Берар придумали свой авторский стиль.</p>
+                                <p>Легенда гласит, что Фредерик и Гийом сидели на лавочке и наблюдали за парижскими прохожими. Люди спешили мимо, но в каждом из них братья видели изюминку, которую только предстояло раскрыть. «Кто, если не мы?» — решили Берар и отправились менять Париж к лучшему. А следом за ним и остальные города мира. Так родилось парикмахерское направление Mod's Hair (Модс хеа). Дословно — «волосы в движении».</p>
+                                <p>Из Парижа с любовью</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="line-bull-up"><div class="bull left"></div><div class="bull right"></div><div class="line-bull-top"></div></div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="container">
+                <footer>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="partners">
+                                <li><a href="#"><img src="img/partners/vivaton.png" alt="vivaton"></a></li>
+                                <li><a href="#"><img src="img/partners/calgel.png" alt="calgel"></a></li>
+                                <li><a href="#"><img src="img/partners/hinoki.png" alt="hinoki"></a></li>
+                                <li><a href="#"><img src="img/partners/natinuel.png" alt="natinuel"></a></li>
+                                <li><a href="#"><img src="img/partners/nioxin.png" alt="nioxin"></a></li>
+                                <li><a href="#"><img src="img/partners/wella.png" alt="wella"></a></li>
+                                <li><a href="#"><img src="img/partners/casmara.png" alt="casmara"></a></li>
+                                <li><a href="#"><img src="img/partners/h.png" alt="h"></a></li>
+                                <li><a href="#"><img src="img/partners/sebastian.png" alt="sebastian"></a></li>
+                                <li><a href="#"><img src="img/partners/sp.png" alt="sp"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <div class="bg-black">
+                                <div class="row">
+                                    <div class="col-sm-4 first-footer-block">
+                                        <p>Салон красоты Mod's Hair © 2007-2011</p>
+                                        <p> E-mail: <a href="mail:modshair2007@yandex.ru">modshair2007@yandex.ru</a></p>
+                                        <p class="absolut">Разработка сайта: <a href="http://www.alente.ru/">Alente</a></p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p>г. Красноярск, ул. Алексеева, 93, тел.: (391) 277-15-13</p>
+                                        <div class="map-side" id="map_canvas"></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p>г. Красноярск, ул. Красной Армии, д. 7, тел.: (391) 211-02-90</p>
+                                        <div class="map-side" id="map_canvas1"></div>
+                                    </div>
+
+                                    <div class="col-sm-12 warr">
+                                        <p>Имеются противопоказания. Требуется консультация специалиста</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
