@@ -227,6 +227,7 @@ a.reg-online .right-arr{
     text-transform: uppercase;
     padding: 10px 27px;
     text-decoration: none;
+    
 }
 .menu li:hover{
     margin-top: -1px;
@@ -463,4 +464,10 @@ p.data{
     height: 5px;
     background-image: url("../img/bull-w.png");
     float: right;
+}
+.slider{
+    border:1px solid #000;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
