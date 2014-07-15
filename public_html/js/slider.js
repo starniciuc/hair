@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
         $AutoPlayInterval: 4000, //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
         $PauseOnHover: 1, //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, default value is 1
 
-        $ArrowKeyNavigation: true, //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+        $ArrowKeyNavigation: false, //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
         $SlideDuration: 800, //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
         $MinDragOffsetToSlide: 20, //[Optional] Minimum drag offset to trigger slide , default value is 20
         //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
             $Lanes: 1, //[Optional] Specify lanes to arrange thumbnails, default value is 1
             $SpacingX: 3, //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
             $SpacingY: 3, //[Optional] Vertical space between each thumbnail in pixel, default value is 0
-            $DisplayPieces: 9, //[Optional] Number of pieces to display, default value is 1
+            $DisplayPieces: 12, //[Optional] Number of pieces to display, default value is 1
             $ParkingPosition: 260, //[Optional] The offset position to park thumbnail
             $Orientation: 1, //[Optional] Orientation to arrange thumbnails, 1 horizental, 2 vertical, default value is 1
             $DisableDrag: false                            //[Optional] Disable drag or not, default value is false
@@ -40,7 +40,7 @@ jQuery(document).ready(function($) {
     function ScaleSlider() {
         var bodyWidth = document.body.clientWidth;
         if (bodyWidth)
-            jssor_slider1.$SetScaleWidth(Math.min(bodyWidth, 980));
+            jssor_slider1.$SetScaleWidth(Math.min(bodyWidth, 1140));
         else
             window.setTimeout(ScaleSlider, 30);
     }

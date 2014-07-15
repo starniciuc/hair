@@ -4,6 +4,8 @@
    Author's custom styles
    ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
+@import url("slider.css");
+
 @font-face {
     font-family: 'AdineKirnbergRegular';
     src: url('../fonts/llogzbya.eot');

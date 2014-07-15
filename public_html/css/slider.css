@@ -1,0 +1,79 @@
+#slider1_container{
+    position: relative; 
+    margin: 0 auto;  
+    top: 0px; 
+    left: 0px; 
+}
+.slides{
+    cursor: move; 
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color:#1c1c1b;
+    border-radius: 8px;
+}
+.slide{
+    padding: 1px;
+}
+.banner-img{
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+.banner-descr{
+    width: 40%;
+    height: 100%;
+    float: right;
+    padding: 40px;
+}
+.banner-descr span{
+    font-size: 50px;
+    color:#FFF
+}
+/* jssor slider thumbnail navigator skin 04 css */
+/*
+.jssort04 .p            (normal)
+.jssort04 .p:hover      (normal mouseover)
+.jssort04 .pav          (active)
+.jssort04 .pav:hover    (active mouseover)
+.jssort04 .pdn          (mousedown)
+*/
+.jssort04 .w, .jssort04 .pav:hover .w
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: #b0b0b0 1px solid;
+}
+* html .jssort04 .w
+{
+    width: /**/ 62px;
+    height: /**/ 32px;
+}
+.jssort04 .pdn .w, .jssort04 .pav .w
+{
+    border-style: solid;
+}
+.jssort04 .c
+{
+    width: 62px;
+    height: 62px;
+    transition: opacity .6s;
+    -moz-transition: opacity .6s;
+    -webkit-transition: opacity .6s;
+    -o-transition: opacity .6s;
+}
+.jssort04 .p:hover .c, .jssort04 .pav .c
+{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #1f1f1f;
+    box-shadow: 0 1px 10px rgba(97, 97, 97, 0.75);
+}
+.jssort04 .p:hover .c
+{
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+}
