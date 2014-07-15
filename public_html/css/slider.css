@@ -48,11 +48,15 @@
 * html .jssort04 .w
 {
     width: /**/ 62px;
-    height: /**/ 32px;
+    height: /**/ 62px;
 }
 .jssort04 .pdn .w, .jssort04 .pav .w
 {
     border-style: solid;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #1f1f1f;
+    box-shadow: 0 1px 10px rgba(97, 97, 97, 0.75);
 }
 .jssort04 .c
 {
@@ -65,10 +69,9 @@
 }
 .jssort04 .p:hover .c, .jssort04 .pav .c
 {
-    width: 70px;
-    height: 70px;
-    border: 1px solid #1f1f1f;
-    box-shadow: 0 1px 10px rgba(97, 97, 97, 0.75);
+    width: 72px;
+    height: 72px;
+    
 }
 .jssort04 .p:hover .c
 {
