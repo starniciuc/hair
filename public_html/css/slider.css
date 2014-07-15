@@ -38,12 +38,16 @@
 .jssort04 .pav:hover    (active mouseover)
 .jssort04 .pdn          (mousedown)
 */
-.jssort04 .w, .jssort04 .pav:hover .w
+.jssort04 .w
 {
     position: absolute;
     width: 60px;
     height: 60px;
     border: #b0b0b0 1px solid;
+}
+.jssort04 .p:hover .w img{
+	width: 70px;
+	height: 70px;
 }
 * html .jssort04 .w
 {
@@ -67,14 +71,16 @@
     -webkit-transition: opacity .6s;
     -o-transition: opacity .6s;
 }
-.jssort04 .p:hover .c, .jssort04 .pav .c
+.jssort04 .p:hover .w img
 {
-    width: 72px;
-    height: 72px;
+    width: 70px;
+    height: 70px;
     
 }
 .jssort04 .p:hover .c
 {
+	width: 70px;
+    height: 70px;
     transition: none;
     -moz-transition: none;
     -webkit-transition: none;
