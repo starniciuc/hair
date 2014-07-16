@@ -3,7 +3,7 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700&subset=latin,cyrillic);
 @import url("slider.css");
 
 @font-face {
@@ -541,6 +541,7 @@ p.data{
 	font-weight: bold;
 	background-color: #2ba6cb;
 }
+<<<<<<< HEAD
 .show-p{
     color: #7f7f7f;
     font-size: 12px;
@@ -583,4 +584,109 @@ p.data{
 }
 .vertical{
     padding: 65px 15px 0;
+=======
+.form-group.two input{
+    width: 49%;
+}
+.form-group.two input:first-child{
+    float: left;
+    margin-right: 2%;
+}
+.form-side{
+	background-color: #de454b;
+	border-radius: 5px;
+	padding: 25px 15px 1px;
+}
+.form-side .form-group{
+	margin-bottom: 25px;
+}
+.form-side input[type="text"],
+.form-side textarea
+{
+	background-color: #FFF;
+	box-shadow: none;
+	border:1px solid rgba(185, 46, 51, 0.55);
+	border-radius: 0;
+}
+.form-group ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #303030;
+    opacity:  1;
+}
+.form-group :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #303030;
+    opacity:  1;
+}
+.form-group ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #303030;
+    opacity:  1;
+}
+.form-group :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #303030;
+    opacity:  1;
+}
+.btn-submit{
+	background-color: #ac292e;
+	color:#FFF;
+}
+.btn-submit:hover{
+	color:#FFF;
+	background-color: #ac000e;
+}
+.query-side{
+	margin: 20px 0;	
+}
+.query-side .name-ask p{
+	color:#4c4c4c;
+	padding-left: 20px;
+}
+.query-side .name-ask p span{
+	color: #de454b;
+}
+.query-side .item-query .answer p{
+	color: #626161;
+	font-size: 16px;
+	font-style: italic;
+	padding: 0px 35px;
+	margin: 0;
+}
+.query-side .item-query .query-ask p{
+	font-size: 18px;
+	color: #000000;
+	padding: 10px 35px;
+	margin: 0;
+}
+.query-side .item-query .query-ask{
+	background-image: url("../img/border-query.png");
+	background-size: 100% 96%;
+	background-repeat: no-repeat;
+	margin-bottom: 5px;
+	padding-bottom: 10px;
+}
+.query-side .item-query{
+	margin-bottom: 20px;
+}
+.feedback-side .item-feed .name-ask p{
+	color:#4c4c4c;
+}
+.feedback-side .item-feed .name-ask p span{
+	background-color: #e4d9c9;
+	padding: 2px 9px;
+}
+.feedback-side .item-feed .name-ask p i{
+	color: #de454b;
+	font-style: normal;
+}
+.feedback-side .item-feed .feedback-ask p{
+	font-size: 16px;
+	color:#000;
+}
+.feedback-side .item-feed{
+	padding: 15px;
+	margin-bottom: 20px;
+}
+.color{
+	background-color: #ececde;
+}
+.reg-online.in-h1{
+	font-size: 14px;
 }

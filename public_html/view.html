@@ -18,34 +18,34 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
         <script>
-            function initialize() {
-                var myLatlng = new google.maps.LatLng(56.044831, 92.902566);
-                var myLatlng1 = new google.maps.LatLng(56.013484, 92.854247);
-                var myOptions = {
-                    zoom: 14,
-                    center: myLatlng,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var myOptions1 = {
-                    zoom: 14,
-                    center: myLatlng1,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-                var map1 = new google.maps.Map(document.getElementById("map_canvas1"), myOptions1);
+			function initialize() {
+				var myLatlng = new google.maps.LatLng(56.044831, 92.902566);
+				var myLatlng1 = new google.maps.LatLng(56.013484, 92.854247);
+				var myOptions = {
+					zoom: 14,
+					center: myLatlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+				var myOptions1 = {
+					zoom: 14,
+					center: myLatlng1,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+				var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+				var map1 = new google.maps.Map(document.getElementById("map_canvas1"), myOptions1);
 
-                var marker = new google.maps.Marker({
-                    position: myLatlng,
-                    map: map,
-                    title: "Салон красоты Mod's Hair"
-                });
-                var marker1 = new google.maps.Marker({
-                    position: myLatlng1,
-                    map: map1,
-                    title: "Салон красоты Mod's Hair"
-                });
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
+				var marker = new google.maps.Marker({
+					position: myLatlng,
+					map: map,
+					title: "Салон красоты Mod's Hair"
+				});
+				var marker1 = new google.maps.Marker({
+					position: myLatlng1,
+					map: map1,
+					title: "Салон красоты Mod's Hair"
+				});
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
         </script>
     <body>
         <!--[if lt IE 7]>
@@ -167,114 +167,6 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <!-- Jssor Slider Begin -->
-                        <div id="slider1_container" style="width: 1140px; height: 400px;" >
-
-                            <!-- Slides Container -->
-                            <div u="slides" style="width: 1140px; height: 300px; overflow: hidden;" class="slides">
-                                <div class="slide">
-                                    <img src="img/banner/img1.png" class="banner-img" />
-                                    <img u="thumb" src="img/banner/thumbr1.png" />
-                                    <div class="banner-descr">
-                                        <span>results driven</span>
-                                    </div>
-                                </div>
-                                <div class="slide">
-                                    <img src="img/banner/img1.png" class="banner-img" />
-                                    <img u="thumb" src="img/banner/thumbr2.png" />
-                                    <div class="banner-descr">
-                                        <span>results driven</span>
-                                    </div>
-                                </div>
-                                <div class="slide">
-                                    <img src="img/banner/img1.png" class="banner-img" />
-                                    <img u="thumb" src="img/banner/thumbr3.png" />
-                                    <div class="banner-descr">
-                                        <span>results driven</span>
-                                    </div>
-                                </div>
-                                <div class="slide">
-                                    <img src="img/banner/img1.png" class="banner-img" />
-                                    <img u="thumb" src="img/banner/thumbr4.png" />
-                                    <div class="banner-descr">
-                                        <span>results driven</span>
-                                    </div>
-                                </div>
-                                <div class="slide">
-                                    <img src="img/banner/img1.png" class="banner-img" />
-                                    <img u="thumb" src="img/banner/thumbr5.png" />
-                                    <div class="banner-descr">
-                                        <span>results driven</span>
-                                    </div>
-                                </div>
-                                <div class="slide">
-                                    <img src="img/banner/img1.png" class="banner-img" />
-                                    <img u="thumb" src="img/banner/thumbr6.png" />
-                                    <div class="banner-descr">
-                                        <span>results driven</span>
-                                    </div>
-                                </div>
-                                <div class="slide">
-                                    <img src="img/banner/img1.png" class="banner-img" />
-                                    <img u="thumb" src="img/banner/thumbr7.png" />
-                                    <div class="banner-descr">
-                                        <span>results driven</span>
-                                    </div>
-                                </div>
-                                <div class="slide">
-                                    <img src="img/banner/img1.png" class="banner-img" />
-                                    <img u="thumb" src="img/banner/thumbr8.png" />
-                                    <div class="banner-descr">
-                                        <span>results driven</span>
-                                    </div>
-                                </div>
-                                <div class="slide">
-                                    <img src="img/banner/img1.png" class="banner-img" />
-                                    <img u="thumb" src="img/banner/thumbr9.png" />
-                                    <div class="banner-descr">
-                                        <span>results driven</span>
-                                    </div>
-                                </div>
-                                <div class="slide">
-                                    <img src="img/banner/img1.png" class="banner-img" />
-                                    <img u="thumb" src="img/banner/thumbr10.png" />
-                                    <div class="banner-descr">
-                                        <span>results driven</span>
-                                    </div>
-                                </div>
-                                <div class="slide">
-                                    <img src="img/banner/img1.png" class="banner-img" />
-                                    <img u="thumb" src="img/banner/thumbr11.png" />
-                                    <div class="banner-descr">
-                                        <span>results driven</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- ThumbnailNavigator Skin Begin -->
-                            <div u="thumbnavigator" class="jssort04" style="position: absolute; width: 1140px; height: 70px; left: 0px; bottom: 0px;">
-                                <!-- Thumbnail Item Skin Begin -->
-                                <div u="slides" style="bottom: 20px; left: 0px;">
-                                    <div u="prototype" class="p" style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
-                                        <div class="w">
-                                            <thumbnailtemplate style="width: 100%; height: 100%; border: none; position: absolute; top: 0; left: 0;"></thumbnailtemplate>
-                                        </div>
-                                        <div class="c" style="position: absolute; top: 0; left: 0">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Thumbnail Item Skin End -->
-                            </div>
-                            <!-- ThumbnailNavigator Skin End -->
-                        </div>
-                        <!-- Jssor Slider End -->
-
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
                     <div class="col-sm-3">
                         <ul class="left-menu">
                             <li><a href="#">Акции и новости</a></li>
@@ -284,168 +176,40 @@
                             <li><a href="#">Справочник красоты</a></li>
                             <li><a href="#">Контакты</a></li>
                         </ul>
-                        <div class="query-block">
-                            <p class="name">Задайте мне вопрос:</p>
-                            <img src="img/query-img.png" alt="query">
-                            <p class="name"><strong>Слободовская Екатерина</strong></p>
-                            <p>сот. 286-07-01</p>
-                            <p><a href="#">director@modshair.ru</a></p>
-                            <p><a href="#" class="reg-online"><i class="left-arr"></i><span>Задать вопрос</span><i class="right-arr"></i></a></p>
-                        </div>
                     </div>
-                    <div class="col-sm-9 article">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <h2><b><span>Новости</span></b></h2>
-                                <div class="item-news">
-                                    <table>
-                                        <tr>
-                                            <td class="image">
-                                                <img src="img/news1.png">
-                                            </td>
-                                            <td class="description">
-                                                <p class="data">21.03.2014</p>
-                                                <p><a href="#">Поддержим Кристину Сачивко! VI конкурс косметологии и эстетики в Красноярске</a></p>
-                                                <p>Вот и закончился VI конкурс косметологии и эстетики в Красноярске! Напомним, что мероприятие состоялось в МВДЦ </p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="item-news">
-                                    <table>
-                                        <tr>
-                                            <td class="image">
-                                                <img src="img/news2.png">
-                                            </td>
-                                            <td class="description">
-                                                <p class="data">21.03.2014</p>
-                                                <p><a href="#">Краска Koleston Perfect Innocence от Wella – бережное окрашивание и уход</a></p>
-                                                <p>Вот и закончился VI конкурс косметологии и эстетики в Красноярске! Напомним, что мероприятие состоялось в МВДЦ </p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="item-news">
-                                    <table>
-                                        <tr>
-                                            <td class="image">
-                                                <img src="img/news2.png">
-                                            </td>
-                                            <td class="description">
-                                                <p class="data">21.03.2014</p>
-                                                <p><a href="#">Краска Koleston Perfect Innocence от Wella – бережное окрашивание и уход</a></p>
-                                                <p>Вот и закончился VI конкурс косметологии и эстетики в Красноярске! Напомним, что мероприятие состоялось в МВДЦ </p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="more">
-                                    <p><a href="#">Все новости</a></p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <h2><b><span>Наши сплетни</span></b></h2>
-                                <div class="item-news">
-                                    <table>
-                                        <tr>
-                                            <td class="image">
-                                                <img src="img/news1.png">
-                                            </td>
-                                            <td class="description">
-                                                <p class="data">21.03.2014</p>
-                                                <p><a href="#">Поддержим Кристину Сачивко! VI конкурс косметологии и эстетики в Красноярске</a></p>
-                                                <p>Вот и закончился VI конкурс косметологии и эстетики в Красноярске! Напомним, что мероприятие состоялось в МВДЦ </p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="item-news">
-                                    <table>
-                                        <tr>
-                                            <td class="image">
-                                                <img src="img/news3.png">
-                                            </td>
-                                            <td class="description">
-                                                <p class="data">21.03.2014</p>
-                                                <p><a href="#">Сеть салонов красоты «Mod’s Hair» получила звание «COLOR EXPERT»</a></p>
-                                                <p>Вот и закончился VI конкурс косметологии и эстетики в Красноярске! Напомним, что мероприятие состоялось в МВДЦ </p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="item-news">
-                                    <table>
-                                        <tr>
-                                            <td class="image">
-                                                <img src="img/news3.png">
-                                            </td>
-                                            <td class="description">
-                                                <p class="data">21.03.2014</p>
-                                                <p><a href="#">Сеть салонов красоты «Mod’s Hair» получила звание «COLOR EXPERT»</a></p>
-                                                <p>Вот и закончился VI конкурс косметологии и эстетики в Красноярске! Напомним, что мероприятие состоялось в МВДЦ </p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="more">
-                                    <p><a href="#">Все сплетни</a></p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-sm-9 page-content">
+						<div class="adress-page">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li>Отзывы</li>
+							</ul>
+						</div>
+                        <h1>Отзывы <a href="#" class="reg-online in-h1"><i class="left-arr"></i><span>Оставить отзыв</span><i class="right-arr"></i></a></h1>
+						
+						<div class="feedback-side">
+							<div class="item-feed">
+								<div class="name-ask">
+									<p><i>Алина</i> 12 октября 2012 г. <span>о мастере: <a href="#">Кушниренко Дарья</a></span></p>
+								</div>
+								<div class="feedback-ask">
+									<p>Замечательное место для постоянного обслуживания! Атмосфера очень приятная и доброжелательная. Мастера отличные! ВСЕГДА внимательные и приветливые! 
+Именно в этом салоне работает замечательный мастер — Алена! -). Я всегда очень довольна ее работой, делает все качественно и профессионально! Но даже если попадаю не в ее смену, без сомнений сажусь в кресло к Анюте-) и уверена, что результат будет блестящим! 
+Коллективу огромное спасибо за работу! Салону успехов и побольше клиентов! Удачи!!!</p>
+								</div>
+							</div>
+							<div class="item-feed color">
+								<div class="name-ask">
+									<p><i>Алина</i> 12 октября 2012 г. <span>о мастере: <a href="#">Кушниренко Дарья</a></span></p>
+								</div>
+								<div class="feedback-ask">
+									<p>Замечательное место для постоянного обслуживания! Атмосфера очень приятная и доброжелательная. Мастера отличные! ВСЕГДА внимательные и приветливые! 
+Именно в этом салоне работает замечательный мастер — Алена! -). Я всегда очень довольна ее работой, делает все качественно и профессионально! Но даже если попадаю не в ее смену, без сомнений сажусь в кресло к Анюте-) и уверена, что результат будет блестящим! 
+Коллективу огромное спасибо за работу! Салону успехов и побольше клиентов! Удачи!!!</p>
+								</div>
+							</div>
+							<p><a href="#" class="reg-online"><i class="left-arr"></i><span>Оставить отзыв</span><i class="right-arr"></i></a></p>
+						</div>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="main-baner">
-                            <div class="item-banner">
-                                <div class="side-banner">
-                                    <div class="image"><img src="img/banner1.png"></div>
-                                    <p><a href="#">GalGel для укрепления ногтей</a></p>
-                                    <p class="desc">Естественный вид и здоровье ваших ногтей </p>
-                                </div>                                
-                            </div>
-                            <div class="item-banner">
-                                <div class="side-banner  center-banner">
-                                    <div class="image"><img src="img/banner2.png"></div>
-                                    <p><a href="#">Безоперационное омоложение</a></p>
-                                    <p class="desc">Сохранить молодость и красоту без боли, операций</p>
-                                </div>
-                                <div class="bullets-white">
-                                    <div class="bull-w-l"></div>
-                                    <div class="bull-w-r"></div>
-                                </div>
-                            </div>
-                            <div class="item-banner">
-                                <div class="side-banner">
-                                    <div class="image"><img src="img/banner3.png"></div>
-                                    <p><a href="#">Молодость за 100 рублей в день</a></p>
-                                    <p class="desc">Сохранить молодость и красоту без боли, операций</p>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class=" history-block">
-                            <div class="line-bull-up"><div class="bull left"></div><div class="bull right"></div><div class="line-bull-top"></div></div>
-                            <div class="his-content">
-                                <h1>Французская революция</h1>
-                                <p>Как ни крути, все выдающиеся изобретения принадлежат мужчинам.</p>
-                                <p>Ну, или почти все. И даже взгляд на такой «женский» вопрос, как красота, — это все-таки мужской взгляд. В том числе на моду, стиль и парикмахерское искусство.</p>
-                                <p>В 1968 году мужчинам пришло в голову много интересного. Например, в СССР придумали новостную программу «Время». В Америке — первую компьютерную мышь. А во Франции молодые парикмахеры братья Берар придумали свой авторский стиль.</p>
-                                <p>Легенда гласит, что Фредерик и Гийом сидели на лавочке и наблюдали за парижскими прохожими. Люди спешили мимо, но в каждом из них братья видели изюминку, которую только предстояло раскрыть. «Кто, если не мы?» — решили Берар и отправились менять Париж к лучшему. А следом за ним и остальные города мира. Так родилось парикмахерское направление Mod's Hair (Модс хеа). Дословно — «волосы в движении».</p>
-                                <p>Из Парижа с любовью</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="line-bull-up"><div class="bull left"></div><div class="bull right"></div><div class="line-bull-top"></div></div>
-                    </div>                    
                 </div>
             </div>
             <div class="container">
@@ -498,10 +262,6 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/jssor.core.js"></script>
-        <script type="text/javascript" src="js/jssor.utils.js"></script>
-        <script type="text/javascript" src="js/jssor.slider.js"></script>
-        <script type="text/javascript" src="js/slider.js"></script> <!-- only index page!!!!!!!!!-->
         <script src="js/main.js"></script>
     </body>
 </html>
