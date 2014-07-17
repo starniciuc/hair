@@ -29,8 +29,7 @@ a{
     text-decoration: underline;
 } 
 a:hover{
-    color:#0795b9;
-    text-decoration: none;
+    color:#de454b;
 }
 header .slogan{
     font-family: 'AdineKirnbergRegular';
@@ -126,6 +125,12 @@ a.reg-online span{
     border-radius: 7px;
     padding: 5px 30px 6px;
     color:#fff;
+}
+a.reg-online:hover span{
+    color: #000000;
+}
+a.reg-online:hover span b{
+    border-bottom: 1px dotted #000000;
 }
 a.reg-online span b{
     border-bottom: 1px dotted #fff;
@@ -715,6 +720,7 @@ p.data{
 }
 .reg-online.in-h1{
     font-size: 14px;
+    display: initial;
 }
 .collection-hidden{
     display: none;
@@ -840,6 +846,9 @@ p.data{
     padding: 9px 20px;
     margin-top: -4px;
 }
+.price-link:hover{
+    color: #FFF;
+}
 .price-link span{
     padding: 16px;
     background-image: url("../img/ticket.png");
@@ -920,17 +929,27 @@ p.data{
     text-align: left;
     padding-bottom: 15px;
 }
-.form-commad label{
+.form-service{
+    width: 100%;
+    padding-bottom: 15px;
+}
+.form-commad label,
+.form-service label
+{
     font-weight: normal;
     font-size: 14px;
     color:#f7aaad;
     
     margin-bottom: 3px;
 }
-.form-commad .btn-area{
+.form-commad .btn-area,
+.form-service .btn-area
+{
     padding-top: 22px;
 }
-.form-commad .form-group{
+.form-commad .form-group,
+.form-service .form-group
+{
     margin-bottom: 5px;
 }
 .table-side{
@@ -976,4 +995,17 @@ table.price tr:first-child th{
 .price-block ul li{
     display: block;
     padding: 2px;
+}
+.btn-p{
+    margin-bottom: 0;
+}
+.feedback-form{
+}
+.show-feedback,
+.show-service{
+    margin-left: 40px;
+    padding: 5px 0 !important;
+}
+.marg10{
+    margin-bottom: 10px;
 }
