@@ -718,3 +718,150 @@ p.data{
 .collection-hidden{
 	display: none;
 }
+.service-block{
+	padding: 20px 5px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.service-block.blue{
+	background-color: #B5E8FD;
+}
+.service-block.yellow{
+	background-color: #EEEFA3;
+}
+.service-block.pink{
+	background-color: #ECB1B3;
+}
+.service-block.green{
+	background-color: #DAE2BB;
+}
+.service-block.blue2{
+	background-color: #82CCE9;
+}
+.service-block a{
+	font-size: 20px;
+	color:#000;
+	text-decoration: underline;
+	
+}
+.service-block-img.blue-image{
+	background-image: url("../img/service1.png");
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 69px;
+}
+.service-block-img.image2{
+	background-image: url("../img/service2.png");
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 69px;
+}
+.service-block-img.image3{
+	background-image: url("../img/service3.png");
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 69px;
+}
+.service-block-img.image4{
+	background-image: url("../img/service4.png");
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 69px;
+}
+.service-block-img.image5{
+	background-image: url("../img/service5.png");
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 69px;
+}
+.list-services{
+	border:1px solid #000000;
+	padding: 10px;
+	position: relative;
+}
+.list-services .bull{
+	width: 8px;
+    height: 8px;
+    background-image: url("../img/big-bull.png");
+	position: absolute;
+}
+.list-services .bull.upleft{
+	top: -4px;
+	left: -4px;
+}
+.list-services .bull.upright{
+	top: -4px;
+	right: -4px;
+}
+.list-services .bull.downright{
+	bottom: -4px;
+	right: -4px;
+}
+.list-services .bull.downleft{
+	bottom: -4px;
+	left: -4px;
+}
+
+.list-services ul{
+	padding: 0;
+	list-style: none;
+}
+.list-services ul li{
+	display: inline-block;
+	padding: 5px 10px;
+}
+.list-services ul li a{
+	font-size: 15px;
+}
+.list-services ul li a.selected{
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.description-service p{
+	color: #484848;
+	line-height: 23px;
+}
+.description-service .image{
+	float: left;
+	margin-right: 10px;
+}
+.price-link{
+	border-radius: 20px;
+	font-size: 13px;
+	color: #FFF;
+	background-color: #de454b;
+	padding: 9px 20px;
+	margin-top: -4px;
+}
+.price-link span{
+	padding: 16px;
+	background-image: url("../img/ticket.png");
+	background-position: 0 center;
+	background-repeat: no-repeat;
+}
+.service-h1{
+	line-height: 50px;
+}
+.view .about{
+	background-color: #fafaec;
+	border: 1px dotted #000000;
+}
+.view{
+	padding-bottom: 20px;
+	border:4px double #000;
+	margin-bottom: 15px;
+}
+.sugeration-view ul{
+	padding: 0;
+	list-style: none;
+}
+.sugeration-view ul li{
+	display: inline-block;
+	padding: 0 10px;
+}
