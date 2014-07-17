@@ -18,34 +18,34 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
         <script>
-			function initialize() {
-				var myLatlng = new google.maps.LatLng(56.044831, 92.902566);
-				var myLatlng1 = new google.maps.LatLng(56.013484, 92.854247);
-				var myOptions = {
-					zoom: 14,
-					center: myLatlng,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-				}
-				var myOptions1 = {
-					zoom: 14,
-					center: myLatlng1,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-				}
-				var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-				var map1 = new google.maps.Map(document.getElementById("map_canvas1"), myOptions1);
+            function initialize() {
+                var myLatlng = new google.maps.LatLng(56.044831, 92.902566);
+                var myLatlng1 = new google.maps.LatLng(56.013484, 92.854247);
+                var myOptions = {
+                    zoom: 14,
+                    center: myLatlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var myOptions1 = {
+                    zoom: 14,
+                    center: myLatlng1,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+                var map1 = new google.maps.Map(document.getElementById("map_canvas1"), myOptions1);
 
-				var marker = new google.maps.Marker({
-					position: myLatlng,
-					map: map,
-					title: "Салон красоты Mod's Hair"
-				});
-				var marker1 = new google.maps.Marker({
-					position: myLatlng1,
-					map: map1,
-					title: "Салон красоты Mod's Hair"
-				});
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: "Салон красоты Mod's Hair"
+                });
+                var marker1 = new google.maps.Marker({
+                    position: myLatlng1,
+                    map: map1,
+                    title: "Салон красоты Mod's Hair"
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
         </script>
     <body>
         <!--[if lt IE 7]>
@@ -189,51 +189,91 @@
                         <div class="adress-page">
                             <ul>
                                 <li><a href="#">Главная</a></li>
-                                <li><a href="#">Услуги</a></li>
-                                <li>Стрижки и укладки</li>
+                                <li><a href="#">Коллекции стрижек</a></li>
+                                <li><a href="#">Осень-Зима 2013-14</a></li>
                             </ul>
                         </div>
-						
-						<div class="row">
-							<div class="col-sm-6">
-								<h1><i>Асимметричная стрижка</i></h1>
-							</div>
-							<div class="col-sm-6">
-								<p>из коллекци “INTUITIVE от Selective Professional”</p>
-							</div>
-						</div>
-						<div class="line-bull-up"><div class="bull left"></div><div class="bull right"></div><div class="line-bull-top"></div></div>
-						<div class="row view">
-							<div class="col-sm-5">
-								<img src="img/view-img.png" alt="view">
-							</div>
-							<div class="col-sm-6 text-center">
-								<div class="about">
-									<p><strong>Эта стрижка будет у вас за:</strong></p>
-									<h2>25 минут</h2>
-									<p class="price">1 500 &#8381;</p>
-								</div>
-								
-								<p><a href="#" class="reg-online"><i class="left-arr"></i><span>Хочу такую стрижку!</span><i class="right-arr"></i></a></p>
-								
-								<h3><strong>Адреса салонов:</strong></h3>
-								<p>ул. Алексеева, д. 93,  тел.: (391) 277-15-13</p>
-								<p>ул. Красной Армии, д. 7,  тел.: (391) 211-02-90</p>
-								
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-12 sugeration-view">
-								<ul>
-									<li><a href="#"><img src="img/view2.png" alt="img1"></a></li>
-									<li><a href="#"><img src="img/view3.png" alt="img2"></a></li>
-									<li><a href="#"><img src="img/view4.png" alt="img3"></a></li>
-									<li><a href="#"><img src="img/view2.png" alt="img4"></a></li>
-									<li><a href="#"><img src="img/view3.png" alt="img5"></a></li>
-									<li><a href="#"><img src="img/view4.png" alt="img6"></a></li>
-								</ul>
-							</div>
-						</div>
+
+                        <div class="row title-view">
+                            <div class="col-sm-6">
+                                <h1><i>Асимметричная стрижка</i></h1>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><em>из коллекци “INTUITIVE от Selective Professional”</em></p>
+                            </div>
+                        </div>
+                        <div class="line-bull-up"><div class="bull left"></div><div class="bull right"></div><div class="line-bull-top"></div></div>
+                        <div class="row view">
+                            <div class="col-sm-5 image">
+                                <img src="img/view-img.png" alt="view">
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <div class="about">
+                                    <p class="title"><strong>Эта стрижка будет у вас за:</strong></p>
+                                    <h2>25 минут</h2>
+                                    <p class="price"><strong>1 500 &#8381;</strong></p>
+                                </div>
+                                <div class="command">
+                                    <p><a href="#" class="reg-online show-form-command"><i class="left-arr"></i><span>Хочу такую стрижку!</span><i class="right-arr"></i></a></p>
+                                    <div class="form-commad form-side">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-xs-7">
+                                                    <div class="form-group">
+                                                        <label>Ваше имя *</label>
+                                                        <input type="text" class="form-control" placeholder="Александра">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-5">
+                                                    <label>Дата записи к мастеру *</label>
+                                                    <input type="text" class="form-control" placeholder="22 октября 2012 г.">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>В какой из салонов вам будет удобнее приехать * </label>
+                                                <select class="form-control">
+                                                    <option>Алексеева 93</option>
+                                                    <option>Красной Армии 7</option>
+                                                </select>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-8">
+                                                    <div class="form-group">
+                                                        <label>Ваше телефон *</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group clearfix btn-area">
+                                                        <input type="submit" value="Отправить" class="btn btn-submit">										
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </form>
+                                    </div>
+                                </div>
+                                <h3><strong>Адреса салонов:</strong></h3>
+                                <p class="adress">ул. Алексеева, д. 93,  тел.: (391) 277-15-13</p>
+                                <p class="adress">ул. Красной Армии, д. 7,  тел.: (391) 211-02-90</p>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 sugeration-view">
+                                <ul>
+                                    <li><a href="#"><img src="img/view1.png" alt="img1"></a></li>
+                                    <li><a href="#"><img src="img/view2.png" alt="img1"></a></li>
+                                    <li><a href="#"><img src="img/view3.png" alt="img2"></a></li>
+                                    <li><a href="#"><img src="img/view4.png" alt="img3"></a></li>
+                                    <li><a href="#"><img src="img/view1.png" alt="img4"></a></li>
+                                    <li><a href="#"><img src="img/view2.png" alt="img4"></a></li>
+                                    <li><a href="#"><img src="img/view3.png" alt="img5"></a></li>
+                                    <li><a href="#"><img src="img/view4.png" alt="img6"></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

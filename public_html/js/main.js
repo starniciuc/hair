@@ -6,3 +6,7 @@ $(".show-more").click(function() {
 	par.toggle("fast");
 
 });
+
+$(".show-form-command").click(function(){
+    $(".form-commad").toggle();
+})
