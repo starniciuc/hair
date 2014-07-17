@@ -575,15 +575,40 @@ p.data{
     padding: 15px;
     margin-top: 10px;
 }
+.item-hair-colection{
+	padding-bottom: 25px;
+	border-bottom: 4px double #000;
+	margin-bottom: 15px;
+}
 .item-hair-colection a{
     font-size: 24px;
 }
+
 .colection-side .image img{
     width: 100%;
     border:1px solid #b0b0b0;
 }
+.colection-side .image a{
+	padding: 6px;
+	width: 100%;
+	display: block;
+}
+.colection-side .image a:hover{
+	background-color: #FFF;
+	box-shadow: 0 0 10px #333;
+}
 .vertical{
-    padding: 65px 15px 0;
+    padding: 45px 15px 0 0;
+}
+.vertical a.active{
+	background: url("../img/updown.png") no-repeat scroll center -79px #f0f0dc;
+}
+.vertical a{
+	 background: url("../img/updown.png") no-repeat scroll center 23px rgba(0, 0, 0, 0);
+    border: 1px solid transparent;
+    display: block;
+    height: 56px;
+    width: 48px;
 }
 .form-group.two input{
     width: 49%;
@@ -689,4 +714,7 @@ p.data{
 }
 .reg-online.in-h1{
 	font-size: 14px;
+}
+.collection-hidden{
+	display: none;
 }

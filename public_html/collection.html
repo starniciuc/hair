@@ -14,39 +14,39 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/zoom.css">
+        <link rel="stylesheet" href="css/lightbox.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
         <script>
-            function initialize() {
-                var myLatlng = new google.maps.LatLng(56.044831, 92.902566);
-                var myLatlng1 = new google.maps.LatLng(56.013484, 92.854247);
-                var myOptions = {
-                    zoom: 14,
-                    center: myLatlng,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var myOptions1 = {
-                    zoom: 14,
-                    center: myLatlng1,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-                var map1 = new google.maps.Map(document.getElementById("map_canvas1"), myOptions1);
+			function initialize() {
+				var myLatlng = new google.maps.LatLng(56.044831, 92.902566);
+				var myLatlng1 = new google.maps.LatLng(56.013484, 92.854247);
+				var myOptions = {
+					zoom: 14,
+					center: myLatlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+				var myOptions1 = {
+					zoom: 14,
+					center: myLatlng1,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+				var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+				var map1 = new google.maps.Map(document.getElementById("map_canvas1"), myOptions1);
 
-                var marker = new google.maps.Marker({
-                    position: myLatlng,
-                    map: map,
-                    title: "Салон красоты Mod's Hair"
-                });
-                var marker1 = new google.maps.Marker({
-                    position: myLatlng1,
-                    map: map1,
-                    title: "Салон красоты Mod's Hair"
-                });
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
+				var marker = new google.maps.Marker({
+					position: myLatlng,
+					map: map,
+					title: "Салон красоты Mod's Hair"
+				});
+				var marker1 = new google.maps.Marker({
+					position: myLatlng1,
+					map: map1,
+					title: "Салон красоты Mod's Hair"
+				});
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
         </script>
     <body>
         <!--[if lt IE 7]>
@@ -196,27 +196,97 @@
                         <h1>Коллекции стрижек</h1>
 
                         <div class="item-hair-colection">
-                            <a href="#">лето 2014</a>
+                            <a href="#">ЛЕТО 2014</a>
                             <div class="colection-side">
-                                <div class="row">
+                                <div class="row colect-par">
                                     <div class="col-sm-11">
                                         <div class="row image">
+
                                             <div class="col-sm-3">
-                                                <a href="img/col-img1.png" class="zoom"><img src="img/col-img1.png" alt="hair collection"></a>
+                                                <a href="img/big-img/frederic.jpg" data-lightbox="image-1" data-title=""><img src="img/col-img1.png" alt="img"></a>
                                             </div>
                                             <div class="col-sm-3">
-                                                <img src="img/col-img2.png" alt="hair collection">
+                                                <a href="img/big-img/teddy.jpg" data-lightbox="image-1"><img src="img/col-img2.png" alt="hair collection"></a>
                                             </div>
                                             <div class="col-sm-3">
-                                                <img src="img/img-col-3.png" alt="hair collection">
+                                                <a href="img/big-img/kate.jpg" data-lightbox="image-1"><img src="img/img-col-3.png" alt="hair collection"></a>
                                             </div>
                                             <div class="col-sm-3">
-                                                <img src="img/col-img4.png" alt="hair collection">
+                                                <a href="img/big-img/kate_1.jpg" data-lightbox="image-1"><img src="img/col-img4.png" alt="hair collection"></a>
                                             </div>
+
+											<div class="collection-hidden">
+												<div class="col-sm-3">
+													<a href="img/big-img/frederic.jpg" data-lightbox="image-2" data-title=""><img src="img/col-img1.png" alt="img"></a>
+												</div>
+												<div class="col-sm-3">
+													<a href="img/big-img/teddy.jpg" data-lightbox="image-2"><img src="img/col-img2.png" alt="hair collection"></a>
+												</div>
+												<div class="col-sm-3">
+													<a href="img/big-img/kate.jpg" data-lightbox="image-2"><img src="img/img-col-3.png" alt="hair collection"></a>
+												</div>
+												<div class="col-sm-3">
+													<a href="img/big-img/kate_1.jpg" data-lightbox="image-2"><img src="img/col-img4.png" alt="hair collection"></a>
+												</div>
+												<div class="col-sm-3">
+													<a href="img/big-img/frederic.jpg" data-lightbox="image-2" data-title=""><img src="img/col-img1.png" alt="img"></a>
+												</div>
+												<div class="col-sm-3">
+													<a href="img/big-img/teddy.jpg" data-lightbox="image-2"><img src="img/col-img2.png" alt="hair collection"></a>
+												</div>
+											</div>
                                         </div>
                                     </div>
                                     <div class="col-sm-1 vertical">
-                                        <a href="#"><img src="img/down-arrow.png" alt="down"></a>
+                                        <a href="#" class="show-more"> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-hair-colection">
+                            <a href="#">Осень-Зима 2013-14</a>
+                            <div class="colection-side">
+                                <div class="row colect-par">
+                                    <div class="col-sm-11">
+                                        <div class="row image">
+
+                                            <div class="col-sm-3">
+                                                <a href="img/big-img/Andree-2-225.jpg" data-lightbox="image-1" data-title=""><img src="img/Andree-2-225_thumb_1.jpg" alt="img"></a>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <a href="img/big-img/Angele-5470_v2.jpg" data-lightbox="image-1"><img src="img/Angele-5470_thumb_1.jpg" alt="hair collection"></a>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <a href="img/big-img/andree-izarry-334.jpg" data-lightbox="image-1"><img src="img/andree-izarry-334_thumb.jpg" alt="hair collection"></a>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <a href="img/big-img/andree-izarry-4.jpg" data-lightbox="image-1"><img src="img/andree-izarry-4_thumb.jpg" alt="hair collection"></a>
+                                            </div>
+
+											<div class="collection-hidden">
+												<div class="col-sm-3">
+													<a href="img/big-img/frederic.jpg" data-lightbox="image-2" data-title=""><img src="img/col-img1.png" alt="img"></a>
+												</div>
+												<div class="col-sm-3">
+													<a href="img/big-img/teddy.jpg" data-lightbox="image-2"><img src="img/col-img2.png" alt="hair collection"></a>
+												</div>
+												<div class="col-sm-3">
+													<a href="img/big-img/kate.jpg" data-lightbox="image-2"><img src="img/img-col-3.png" alt="hair collection"></a>
+												</div>
+												<div class="col-sm-3">
+													<a href="img/big-img/kate_1.jpg" data-lightbox="image-2"><img src="img/col-img4.png" alt="hair collection"></a>
+												</div>
+												<div class="col-sm-3">
+													<a href="img/big-img/frederic.jpg" data-lightbox="image-2" data-title=""><img src="img/col-img1.png" alt="img"></a>
+												</div>
+												<div class="col-sm-3">
+													<a href="img/big-img/teddy.jpg" data-lightbox="image-2"><img src="img/col-img2.png" alt="hair collection"></a>
+												</div>
+											</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1 vertical">
+                                        <a href="#" class="show-more"> </a>
                                     </div>
                                 </div>
                             </div>
@@ -277,7 +347,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/vendor/zoom.js"></script>
+        <script src="js/lightbox.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
