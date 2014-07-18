@@ -48,6 +48,7 @@
 .jssort04 .p:hover .w img{
 	width: 70px;
 	height: 70px;
+	padding: 3px;
 }
 * html .jssort04 .w
 {
@@ -56,20 +57,20 @@
 }
 .jssort04 .pdn .w, .jssort04 .pav .w
 {
+	
     border-style: solid;
     width: 70px;
     height: 70px;
     border: 1px solid #1f1f1f;
-    box-shadow: 0 1px 10px rgba(97, 97, 97, 0.75);
+    box-shadow: 0 1px 5px rgba(97, 97, 97, 0.75);
+	
 }
 .jssort04 .c
 {
-    width: 62px;
-    height: 62px;
-    transition: opacity .6s;
-    -moz-transition: opacity .6s;
-    -webkit-transition: opacity .6s;
-    -o-transition: opacity .6s;
+	width: 15px;
+	height: 15px;
+   background: url("../img/arrow-banner.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+   z-index: 3;
 }
 .jssort04 .p:hover .w img
 {
@@ -77,12 +78,11 @@
     height: 70px;
     
 }
-.jssort04 .p:hover .c
-{
+
+.jssort04 .p:hover .c img{
 	width: 70px;
     height: 70px;
-    transition: none;
-    -moz-transition: none;
-    -webkit-transition: none;
-    -o-transition: none;
+}
+.jssort04 .pav .w {
+    background: url("../img/arrow-banner.png") no-repeat scroll center top rgba(0, 0, 0, 0);
 }
