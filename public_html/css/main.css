@@ -939,7 +939,7 @@ p.data{
     font-weight: normal;
     font-size: 14px;
     color:#f7aaad;
-    
+
     margin-bottom: 3px;
 }
 .form-commad .btn-area,
@@ -960,7 +960,7 @@ p.data{
 table.price{
     width: 100%;
     text-align: center;
-    
+
 }
 table.price td{
     color: #414141;
@@ -1013,4 +1013,67 @@ table.price tr:first-child th{
     margin-left: -270px;
     top: 68px;
     width: 500px;
+}
+
+@media screen and (max-width: 1200px) {
+    .menu li a{
+		padding: 10px 15px;
+	}
+	header .slogan{
+		font-size: 30px;
+	}
+	ul.partners{
+		text-align: center;
+	}
+	ul.partners li{
+		padding: 15px;
+	}
+}
+@media screen and (max-width: 992px) {
+	header .logo{
+		background-size: 100% auto;
+	}
+	.form-header {
+		margin-left: -26px;
+		top: 132px;
+		width: 500px;
+	}
+	.menu li a {
+		padding: 10px 7px;
+		font-size: 14px;
+	}
+}
+@media(max-width:768px){
+	header{
+		display: none;
+	}
+	.navbar-header{
+		background-color: #de454b;
+	}
+	.menu li{
+		display: block;
+	}
+	.menu li:hover{
+		background: none;
+		margin: 0;
+		border: 0;
+		box-shadow: none;
+	}
+	.menu li:hover > .submenu{
+		display: none;
+	}
+	.slider-area{
+		display: none;
+	}
+	.first-footer-block{
+		height: 60px;
+	}
+	.price-link{
+		display: block;
+		padding: 0 24px;
+	}
+	.form-commad{
+		width: 100%;
+		margin: 0;
+	}
 }

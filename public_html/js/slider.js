@@ -38,7 +38,7 @@ jQuery(document).ready(function($) {
     //responsive code begin
     //you can remove responsive code if you don't want the slider scales while window resizes
     function ScaleSlider() {
-        var bodyWidth = document.body.clientWidth;
+        var bodyWidth =  jssor_slider1.$Elmt.parentNode.clientWidth;
         if (bodyWidth)
             jssor_slider1.$SetScaleWidth(Math.min(bodyWidth, 1140));
         else
@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
     if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
         $(window).bind('resize', ScaleSlider);
     }
-
+	
 
     //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
     //    $(window).bind("orientationchange", ScaleSlider);
