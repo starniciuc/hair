@@ -18,34 +18,34 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
         <script>
-			function initialize() {
-				var myLatlng = new google.maps.LatLng(56.044831, 92.902566);
-				var myLatlng1 = new google.maps.LatLng(56.013484, 92.854247);
-				var myOptions = {
-					zoom: 14,
-					center: myLatlng,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-				}
-				var myOptions1 = {
-					zoom: 14,
-					center: myLatlng1,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-				}
-				var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-				var map1 = new google.maps.Map(document.getElementById("map_canvas1"), myOptions1);
+            function initialize() {
+                var myLatlng = new google.maps.LatLng(56.044831, 92.902566);
+                var myLatlng1 = new google.maps.LatLng(56.013484, 92.854247);
+                var myOptions = {
+                    zoom: 14,
+                    center: myLatlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var myOptions1 = {
+                    zoom: 14,
+                    center: myLatlng1,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+                var map1 = new google.maps.Map(document.getElementById("map_canvas1"), myOptions1);
 
-				var marker = new google.maps.Marker({
-					position: myLatlng,
-					map: map,
-					title: "Салон красоты Mod's Hair"
-				});
-				var marker1 = new google.maps.Marker({
-					position: myLatlng1,
-					map: map1,
-					title: "Салон красоты Mod's Hair"
-				});
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: "Салон красоты Mod's Hair"
+                });
+                var marker1 = new google.maps.Marker({
+                    position: myLatlng1,
+                    map: map1,
+                    title: "Салон красоты Mod's Hair"
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
         </script>
     <body>
         <!--[if lt IE 7]>
@@ -62,7 +62,7 @@
                         </div>
                         <div class="col-sm-8">
                             <div class="row">
-								<div class="col-md-6 col-md-push-6 ">
+                                <div class="col-md-6 col-md-push-6 ">
                                     <div class="search-block">
                                         <div class="row">
                                             <div class="col-sm-7">
@@ -201,7 +201,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-3 hidden-md hidden-sm hidden-xs">
+                    <div class="col-sm-3 hidden-sm hidden-xs">
                         <ul class="left-menu">
                             <li><a href="#">Акции и новости</a></li>
                             <li><a href="#">Наши сплетни</a></li>
@@ -210,37 +210,45 @@
                             <li><a href="#">Справочник красоты</a></li>
                             <li><a href="#">Контакты</a></li>
                         </ul>
+                        <div class="query-block">
+                            <p class="name">Задайте мне вопрос:</p>
+                            <img src="img/query-img.png" alt="query">
+                            <p class="name"><strong>Слободовская Екатерина</strong></p>
+                            <p>сот. 286-07-01</p>
+                            <p><a href="#">director@modshair.ru</a></p>
+                            <p><a href="#" class="reg-online"><i class="left-arr"></i><span>Задать вопрос</span><i class="right-arr"></i></a></p>
+                        </div>
                     </div>
                     <div class="col-md-9 page-content">
-						<div class="adress-page">
-							<ul>
-								<li><a href="#">Главная</a></li>
-								<li>Общая</li>
-							</ul>
-						</div>
+                        <div class="adress-page">
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li>Общая</li>
+                            </ul>
+                        </div>
                         <h1>Mod's Hair</h1>
-						
-						<div class="public-side">
-							<div class="row">
-								<div class="col-sm-4 service-block blue"><a href="#">Парикмахерские услуги</a></div><div class="col-sm-8 service-block-img blue-image"></div>
-							</div>
-							
-							<div class="row">
-								<div class="col-sm-4 service-block yellow"><a href="#">Косметалогия</a></div><div class="col-sm-8 service-block-img image2"></div>
-							</div>
-							
-							<div class="row">
-								<div class="col-sm-4 service-block pink"><a href="#">Визаж</a></div><div class="col-sm-8 service-block-img image3"></div>
-							</div>
-							
-							<div class="row">
-								<div class="col-sm-4 service-block green"><a href="#">Маникюр</a></div><div class="col-sm-8 service-block-img image4"></div>
-							</div>
-							
-							<div class="row">
-								<div class="col-sm-4 service-block blue2"><a href="#">Педикюр</a></div><div class="col-sm-8 service-block-img image5"></div>
-							</div>
-						</div>
+
+                        <div class="public-side">
+                            <div class="row">
+                                <div class="serv clearfix"><div class="col-sm-4 service-block blue"><a href="#">Парикмахерские услуги</a></div><div class="col-sm-8 service-block-img blue-image"></div></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="serv clearfix"><div class="col-sm-4 service-block yellow"><a href="#">Косметалогия</a></div><div class="col-sm-8 service-block-img image2"></div></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="serv clearfix"><div class="col-sm-4 service-block pink"><a href="#">Визаж</a></div><div class="col-sm-8 service-block-img image3"></div></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="serv clearfix"><div class="col-sm-4 service-block green"><a href="#">Маникюр</a></div><div class="col-sm-8 service-block-img image4"></div></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="serv clearfix"><div class="col-sm-4 service-block blue2"><a href="#">Педикюр</a></div><div class="col-sm-8 service-block-img image5"></div></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

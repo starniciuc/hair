@@ -563,8 +563,7 @@ p.data{
     font-style: normal;
 }
 .item-video{
-    margin-bottom: 15px;
-    padding: 10px 0;
+    padding: 10px 0 0;
 }
 .item-video .video-side{
     padding: 10px 0;
@@ -720,7 +719,8 @@ p.data{
 }
 .reg-online.in-h1{
     font-size: 14px;
-    display: initial;
+    margin-left: 140px;
+    margin-top: -38px;
 }
 .collection-hidden{
     display: none;
@@ -728,6 +728,13 @@ p.data{
 .service-block{
     padding: 20px 5px;
     text-align: center;
+}
+.serv:hover{
+    box-shadow: 0px 0 10px 0 rgba(0,0,0,0.3);
+    border: 1px solid #b0b0b0;
+    cursor: pointer;
+}
+.serv{
     margin-bottom: 10px;
 }
 .service-block.blue{
@@ -753,7 +760,7 @@ p.data{
 }
 .service-block-img.blue-image{
     background-image: url("../img/service1.png");
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 69px;

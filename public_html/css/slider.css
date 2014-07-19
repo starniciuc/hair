@@ -26,9 +26,22 @@
     float: right;
     padding: 40px;
 }
-.banner-descr span{
-    font-size: 50px;
-    color:#FFF
+.banner-descr h2{
+    font-size: 31px;
+    color:#FFF;
+    margin:0;
+}
+.banner-descr h1{
+    font-size: 60px;
+    font-weight: bold;
+    color:#FFF;
+    margin:0;
+}
+.banner-descr h1 span{
+    color: rgba(222, 69, 75, 0.18);
+}
+.banner-descr p a{
+    font-size: 16px;
 }
 /* jssor slider thumbnail navigator skin 04 css */
 /*
@@ -38,39 +51,36 @@
 .jssort04 .pav:hover    (active mouseover)
 .jssort04 .pdn          (mousedown)
 */
+.jssort04 .p{
+    width: 70px!important;
+    height: 70px!important;
+}
 .jssort04 .w
 {
     position: absolute;
-    width: 60px;
-    height: 60px;
-    border: #b0b0b0 1px solid;
+    width: 70px!important;
+    height: 70px!important;
+    border: 0;
+    padding-top: 6px;
+    text-align: center;
+}
+.jssort04 .p .w img,
+.jssort04 .pav .w img,
+.jssort04 .pdn .w img
+{
+    position: initial !important;
+    border: #b0b0b0 1px solid !important;
+    width: 60px!important;
+    
+}
+.jssort04 .pdn .w img{
+    border:1px solid blue!important;
 }
 .jssort04 .p:hover .w img{
-	width: 70px;
-	height: 70px;
-	padding: 3px;
+    border:1px solid black !important;
 }
-* html .jssort04 .w
-{
-    width: /**/ 62px;
-    height: /**/ 62px;
-}
-.jssort04 .pdn .w, .jssort04 .pav .w
-{
-	
-    border-style: solid;
-    width: 70px;
-    height: 70px;
-    border: 1px solid #1f1f1f;
-    box-shadow: 0 1px 5px rgba(97, 97, 97, 0.75);
-	
-}
-.jssort04 .c
-{
-	width: 15px;
-	height: 15px;
-   background: url("../img/arrow-banner.png") no-repeat scroll center top rgba(0, 0, 0, 0);
-   z-index: 3;
+.jssort04 .pav .w{
+    width: 70px!important;
 }
 .jssort04 .p:hover .w img
 {
@@ -80,9 +90,16 @@
 }
 
 .jssort04 .p:hover .c img{
-	width: 70px;
+    width: 70px;
     height: 70px;
 }
 .jssort04 .pav .w {
     background: url("../img/arrow-banner.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+    
+}
+.jssort04 .pav .w img{
+     border: #000 1px solid !important;
+     box-shadow: 0 1px 6px rgba(0,0,0, 0.5);
+     width: 70px !important;
+     height: 70px !important;
 }
