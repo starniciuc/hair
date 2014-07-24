@@ -588,7 +588,7 @@ p.data{
     font-size: 24px;
 }
 
-.colection-side .image img{
+.colection-side .image a img{
     width: 100%;
     border:1px solid #b0b0b0;
 }
@@ -596,11 +596,35 @@ p.data{
     padding: 6px;
     width: 100%;
     display: block;
+	position: relative;
 }
 .colection-side .image a:hover{
     background-color: #FFF;
     box-shadow: 0 0 10px #333;
 }
+.colection-side a span {
+z-index: 4;
+border:0;
+visibility:hidden;
+background-color: #FFF;
+display:block;
+position: absolute;
+/**adjust positioning of full size images in px or %**/
+left: 0px;
+top: 0px;
+/**optional image borders & padding**/
+border: 5px solid #FFF;
+padding: 5px;
+width: 200%;
+height: auto;
+box-shadow: 0 0 10px #333;
+}
+
+.colection-side a:hover span, #rollover a:active span, #rollover a:focus span {visibility:visible;}
+
+.colection-side a:hover, #rollover a:focus
+{visibility:visible;}
+
 .vertical{
     padding: 45px 15px 0 0;
 }
@@ -1050,7 +1074,7 @@ table.price tr:first-child th{
 		font-size: 14px;
 	}
 }
-@media(max-width:768px){
+@media(max-width:767px){
 	header{
 		display: none;
 	}
