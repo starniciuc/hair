@@ -31,3 +31,8 @@ $(".show-service").click(function() {
         });
     });
 })
+$(document).ready(function(){
+   $(".slider-left").bxSlider({
+       auto: true
+   }); 
+});

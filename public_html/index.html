@@ -102,6 +102,7 @@
                                     <p><a href="#" class="reg-online show-form-command"><i class="left-arr"></i><span><b>Запись онлайн</b></span><i class="right-arr"></i></a></p>
                                     <div class="form-commad form-side form-header">
                                         <form>
+                                            <a href="" class="close-form-header show-form-command">x</a>
                                             <div class="row">
                                                 <div class="col-xs-6">
                                                     <div class="form-group">
@@ -559,6 +560,35 @@
                         </div>
                     </div>
                 </footer>
+                <link type="text/css" rel="stylesheet" href="http://www.vse-v-salon.ru/api/css/vvs-button.css">
+                <style>
+                    div#vvs-button {
+                        position: absolute;
+                        top: 105px;
+                        left: 50%;
+                        width: 168px;
+                        height: 38px;
+                        margin-left: -180px;
+                        border-radius: 3px;
+                    }
+                    div#vvs-button:hover {
+                        margin-left: -180px;
+                    }
+                    .vvs-button-img {
+                        background-image: url("http://modshair.ru/i/vvs-button-horizontal.png");
+                        background-position: center 0;
+                        width: 170px;
+                        height: 40px;
+                    }
+                    div#vvs-button.vvs-button-2 {
+                        margin-left: 14px;
+                        border-radius: 3px;
+                    }
+                </style>
+                <script type="text/javascript" src="http://www.vse-v-salon.ru/online-record/api/api.js"></script>
+                <div id="vvs-place-holder"></div>
+                <div style="z-index: 65000; background-color: #5BA04B" id="vvs-button"><div onclick="show_online_record('498'); return false;" class="vvs-button-img"></div></div>
+                <div style="z-index: 65000; background-color: #5BA04B" class="vvs-button-2" id="vvs-button"><div onclick="show_online_record('518'); return false;" class="vvs-button-img"></div></div>
             </div>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
