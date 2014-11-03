@@ -4,6 +4,7 @@
    Author's custom styles
    ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700&subset=latin,cyrillic);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 @import url("slider.css");
 
 @font-face {
@@ -14,10 +15,7 @@
         url('../fonts/llogzbya.ttf') format('truetype'),
         url('../fonts/llogzbya.svg#AdineKirnbergRegular') format('svg');
 }
-@font-face { font-family: "Rubl Sign"; src: url(http://www.artlebedev.ru/ruble.eot); }
-span.rur { font-family: "Rubl Sign"; text-transform: uppercase; color: #000; font-weight: normal;}    
-span.rur span { position: absolute; overflow: hidden; width: .45em; height: 1em; margin: .1ex 0 0 -.55em;}
-span.rur span:before { content: '\2013'; }
+
 body{
     color:#010101;
     font-family: 'PT Sans', sans-serif;
@@ -1051,8 +1049,23 @@ Slider
     color:#515151;
     font-size: 15px;
 }
+.sugeration-view{
+    position: relative;
+}
+.sugeration-view div.text{
+    position: absolute;
+    z-index: 2;
+    position: absolute;
+    left: 15px;
+    top: -19px;
+    background-color: #FFF;
+    font-size: 25px;
+    color: #010101;
+    padding-right: 10px;
+}
 .sugeration-view ul{
     padding: 0;
+    padding-top: 15px;
     list-style: none;
     border-top: 4px double #000;
 }
@@ -1245,5 +1258,21 @@ table.price tr:first-child th{
     }
     #vvs-button{
         display: none !important;
+    }
+    .main-baner .item-banner{
+        width: 100%;
+    }
+    .main-baner .item-banner .center-banner{
+        border: 0;
+    }
+    .main-baner .item-banner .bullets-white{
+        display: none;
+    }
+    .history-block h1,
+    footer .warr p{
+        font-size: 20px;
+    }
+    .history-block .his-content{
+        padding: 10px;
     }
 }
