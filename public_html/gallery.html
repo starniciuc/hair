@@ -18,34 +18,34 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
         <script>
-            function initialize() {
-                var myLatlng = new google.maps.LatLng(56.044831, 92.902566);
-                var myLatlng1 = new google.maps.LatLng(56.013484, 92.854247);
-                var myOptions = {
-                    zoom: 14,
-                    center: myLatlng,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var myOptions1 = {
-                    zoom: 14,
-                    center: myLatlng1,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-                var map1 = new google.maps.Map(document.getElementById("map_canvas1"), myOptions1);
+			function initialize() {
+				var myLatlng = new google.maps.LatLng(56.044831, 92.902566);
+				var myLatlng1 = new google.maps.LatLng(56.013484, 92.854247);
+				var myOptions = {
+					zoom: 14,
+					center: myLatlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+				var myOptions1 = {
+					zoom: 14,
+					center: myLatlng1,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+				var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+				var map1 = new google.maps.Map(document.getElementById("map_canvas1"), myOptions1);
 
-                var marker = new google.maps.Marker({
-                    position: myLatlng,
-                    map: map,
-                    title: "Салон красоты Mod's Hair"
-                });
-                var marker1 = new google.maps.Marker({
-                    position: myLatlng1,
-                    map: map1,
-                    title: "Салон красоты Mod's Hair"
-                });
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
+				var marker = new google.maps.Marker({
+					position: myLatlng,
+					map: map,
+					title: "Салон красоты Mod's Hair"
+				});
+				var marker1 = new google.maps.Marker({
+					position: myLatlng1,
+					map: map1,
+					title: "Салон красоты Mod's Hair"
+				});
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
         </script>
     <body>
         <!--[if lt IE 7]>
@@ -218,6 +218,11 @@
                             <p><a href="#">director@modshair.ru</a></p>
                             <p><a href="#" class="reg-online"><i class="left-arr"></i><span>Задать вопрос</span><i class="right-arr"></i></a></p>
                         </div>
+						<div class="promo-block">
+							<div id="promo-205-1">
+								<img src="img/slider.png" alt="image slide">
+							</div>
+						</div>
                         <div class="aside-slider">
                             <ul class="slider-left">
                                 <li><a href="#"><img src="img/slider.png" alt="image slide"></a></li>
@@ -258,7 +263,7 @@
                                 </li>
                             </ul>
                             <h2>Наши работы</h2>
-                             <ul>
+							<ul>
                                 <li>
                                     <a href="#">
                                         <img src="http://modshair.ru/up/gallery/coco-leto-2009_06-10-14_1_thumb.jpg" alt="image1">
@@ -387,7 +392,7 @@
                                 </li>
                             </ul>
                             <h2>События</h2>
-                             <ul>
+							<ul>
                                 <li>
                                     <a href="#">
                                         <img src="http://modshair.ru/up/gallery/sobytie-a-i-f_1_thumb.jpg" alt="image1">
@@ -426,7 +431,7 @@
                                 </li>
                             </ul>
                             <h2>Наши салоны</h2>
-                             <ul>
+							<ul>
                                 <li>
                                     <a href="#">
                                         <img src="http://modshair.ru/up/gallery/IMG_16_1_thumb.jpg" alt="image1">

@@ -1191,7 +1191,15 @@ table.price tr:first-child th{
     top: 68px;
     width: 500px;
 }
-
+.promo-block{
+	text-align: center;
+	background-color: #f6f5e8;
+	height: 205px; margin: 0;
+	padding-top: 20px;
+}
+#promo-205-1{
+	margin: 0 auto;
+}
 @media screen and (max-width: 1200px) {
     .menu li a{
         padding: 10px 15px;

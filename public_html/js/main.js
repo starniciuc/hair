@@ -32,7 +32,9 @@ $(".show-service").click(function() {
     });
 })
 $(document).ready(function(){
-   $(".slider-left").bxSlider({
-       auto: true
-   }); 
+	if($(".slider-left").length > 0){
+		$(".slider-left").bxSlider({
+			auto: true
+		}); 
+	}
 });
