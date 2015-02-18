@@ -30,17 +30,19 @@ header .logo{
 #ya-site-form0  .ya-site-form__submit{
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 0 none;
+    border-bottom: 1px solid #ccc;
     border-radius: 4px;
-    height: 25px;
+    height: 24px;
     margin: 0;
     position: absolute;
     right: 3px;
     top: 0;
-    width: 27px;
+    width: 27px !important;
     background-image: url("../img/search-icon.png");
-    background-position: center center;
+    background-position: center 6px;
     background-repeat: no-repeat;
     display: block;
+    text-indent: -100em;
 }
 #ya-site-form0 .ya-site-form__search-input-layout, #ya-site-form0 .ya-site-form__search-input-layout-l, #ya-site-form0 .ya-site-form__search-input-layout-r{
     border:0 !important;
@@ -122,6 +124,9 @@ header .logo{
     position: relative !important;
     background-color: #fff !important;
     width: 100% !important;
+}
+#ya-site-form0 .ya-site-suggest-list {
+    background-color: #fff !important;
 }
 a{
     color:#0795b9;
