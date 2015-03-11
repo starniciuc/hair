@@ -142,6 +142,7 @@ header .slogan{
 }
 .call-number{
     font-size: 17px;
+    margin-bottom: 0;
 }
 .search input{
     margin-right: 15px;
@@ -152,7 +153,7 @@ header .slogan{
     padding: 4px 10px;
     width: 100%;
     padding-right: 25px;
-    border-radius: 9px;
+    /*border-radius: 9px;*/
     overflow: hidden;
     box-shadow: 0px 1px 1px 0px rgba(104, 104, 104, 0.31) inset;
     text-align: center;
@@ -186,7 +187,7 @@ header .slogan{
 }
 .search-block{
     padding-top: 4px;
-    box-shadow: 0 3px 5px 0 rgba(218, 218, 218, 0.75);
+    /*box-shadow: 0 3px 5px 0 rgba(218, 218, 218, 0.75);*/
     padding-bottom: 5px;
     text-align: center;
 }
@@ -1301,6 +1302,77 @@ table.price tr:first-child th{
 }
 #promo-205-1{
 	margin: 0 auto;
+}
+.new-news-block{
+    background-color: #f1f1e2;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.new-news-block .news-item{
+    background-color: #FFF;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+.new-news-block .news-item .description{
+    padding: 15px;
+}
+.new-news-block .news-item .description a.link-to{
+    font-size: 14px;
+    color: #0795b9;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+.new-news-block .news-item .description a{
+    font-size: 24px;
+    color: #000000;
+    text-decoration: underline;
+    line-height: 26px;
+}
+.new-news-block .news-item .description a:hover{
+    text-decoration: none;
+    color: #de454b;
+}
+.new-news-block .news-item .description span.date{
+    font-size: 12px;
+    color: #7e7e7e;
+    white-space: nowrap;
+}
+.new-news-block .news-item .image-block{
+    position: relative;
+}
+.new-news-block .news-item .image-block img{
+    width: 100%;
+}
+.new-news-block .news-item .image-block .play-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -41px;
+    margin-top: -41px;
+    width: 82px;
+    height: 82px;
+    background-image: url('../img/play-icon.png');
+}
+.new-news-block .more-news{
+    padding: 7px 25px;
+    color: #FFF;
+    background: url("../img/more-btn.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    text-decoration: none;
+}
+.new-news-block .more-news span{
+    border-bottom: 1px dotted #fff;
+}
+.new-news-block .more-news:hover span{
+    border-bottom: 0px dotted #fff;
+}
+.back-head.first-block{
+    background-position: 97% center;
+}
+.back-head{
+    background: url("../img/divider-head.png") no-repeat right center;
+    height: 80px;
 }
 @media screen and (max-width: 1200px) {
     .menu li a{
